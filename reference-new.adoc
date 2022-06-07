@@ -20,7 +20,7 @@ Cloud Volumes ONTAP 9.11.0には、新しい拡張機能が追加されていま
 
 
 
-== Elastic Volumeのサポート（2022年6月6日）
+== Elastic Volumesのサポート（2022年6月7日）
 
 Cloud Volumes ONTAP アグリゲートでAmazon EBS Elastic Volumes機能がサポートされるため、パフォーマンスが向上して容量が追加されると同時に、必要に応じて基盤となるディスク容量がCloud Managerで自動的に拡張されます。
 
