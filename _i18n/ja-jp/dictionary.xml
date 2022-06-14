@@ -84,9 +84,7 @@
   <block id="38797647ee0806ca5a6dba902f03f6e0" category="cell">1 ライセンスあたり 368 TB</block>
   <block id="376c581ebe9ec9aa8853377f8538ebbd" category="cell">容量単位のライセンスです</block>
   <block id="9010e525ec80d0fdea3d56191f64ce39" category="cell">2 PiB</block>
-  <block id="2819feead2b07762a4465189ab8b2f52" category="section-title">HA ペアの場合、ライセンスで許可されるノードあたりの容量制限はか、それとも HA ペア全体の容量制限ですか。</block>
   <block id="ce5ee1bd79a3fbc4ee9fee207a94ef54" category="paragraph">容量制限は HA ペア全体の容量制限です。ノード単位ではありません。たとえば、 Premium ライセンスを使用する場合、両方のノード間で最大 368 TB の容量を確保できます。</block>
-  <block id="7093c2c9844cf46dcd5d50c6d596d244" category="section-title">HA ペアの場合、ミラーリングされたデータはライセンスで許可されている容量の上限にカウントされますか。</block>
   <block id="1ddc84b3dc9fe6599d89fd9b7f5c6660" category="paragraph">いいえ、できません。HA ペアのデータは、 Google Cloud で障害が発生した場合にデータを利用できるように、ノード間で同期的にミラーされます。たとえば、ノード A で 8TB ディスクを購入した場合、 Cloud Manager は、ミラーリングされたデータに使用する 8 TB のディスクをノード B にも割り当てます。16TB の容量がプロビジョニングされましたが、ライセンスの上限には 8TB しかカウントされません。</block>
   <block id="466cd90b62b5da75ee4bd662add41e7f" category="section-title">ディスクと階層化の制限</block>
   <block id="49e0d392d83f24aa1384f18b22975ef6" category="paragraph">次の表に、ディスクのみの場合の最大システム容量と、オブジェクトストレージへのディスクおよびコールドデータの階層化を示します。ディスク制限はユーザデータが格納されたディスクに固有です。この制限には、ブートディスクとルートディスクは含まれていません。</block>
@@ -209,13 +207,10 @@
   <block id="4a67bdd5f30eeac9ad064fc6433dc926" category="cell">10TiB</block>
   <block id="61dcfaac24363a16e4b318c1317f0309" category="cell">368TiB</block>
   <block id="7751129b8546a0da65fb379b1cc9c243" category="cell">1 ライセンスあたり 368 TiB</block>
-  <block id="2f9882645b2c32820ad085240bacb763" category="section-title">HA の場合、ライセンスの容量制限はノード単位か、 HA ペア全体に適用されるか</block>
   <block id="44007958b04e5e15a25a3ca1ee98abeb" category="paragraph">容量制限は HA ペア全体の容量制限です。ノード単位ではありません。たとえば、 Premium ライセンスを使用する場合、両方のノード間で最大 368 TiB の容量を確保できます。</block>
-  <block id="fc9a388cd18c69244f22554de6f0d544" category="section-title">AWS の HA システムでは、ミラーリングされたデータは容量制限にカウントされますか。</block>
   <block id="8644b747d80d3144a35c2f7a3eb37c2e" category="paragraph">いいえ、できません。AWS HA ペアのデータは、障害発生時にデータを利用できるように、ノード間で同期的にミラーされます。たとえば、ノード A で 8TiB ディスクを購入した場合、 Cloud Manager は、ミラーリングされたデータに使用する 8 TiB のディスクをノード B にも割り当てます。16TiB の容量がプロビジョニングされましたが、ライセンスの上限には 8TiB しかカウントされません。</block>
   <block id="c029ebf0cab0f40812ebec7c644fef41" category="section-title">ディスクおよび階層化の制限は EC2 インスタンスごとに適用されます</block>
   <block id="5a9c94e941761c15ef227dfa8c3fc6d8" category="paragraph">Cloud Volumes ONTAP は EBS ボリュームをディスクとして使用し、最大ディスクサイズは 16TiB です。以下のセクションでは、 EC2 インスタンスファミリーごとにディスクと階層化の制限を示します。これは、多くの EC2 インスタンスタイプでディスクの制限が異なるためです。また、シングルノードシステムと HA ペアではディスク制限も異なります。</block>
-  <block id="e197fb210372b9fefa18060ae467b367" category="list-text">新しい Cloud Volumes ONTAP 9.10.0 システムでは、 C4 、 M4 、および R4 インスタンスタイプはサポートされません。ただし、これらのインスタンスタイプのいずれかで実行している場合は、システムを 9.10.0 リリースにアップグレードできるため、これらのインスタンスタイプのディスク制限は引き続き表示されます。</block>
   <block id="5eb6e090da55ad28bf2f9c1286619ef2" category="list-text">以下のディスク制限は、ユーザデータが格納されたディスクに固有です。この制限には、ブートディスクとルートディスクは含まれていません。</block>
   <block id="275e3ef1a302e67e93bcf0f30d566f74" category="inline-link">Cloud Volume にシステムライセンスを追加する方法について説明します ONTAP</block>
   <block id="bb1dfd389b14b44028041022a8d2899f" category="list-text">Cloud Volumes ONTAP BYOL システムに複数のノードベースライセンスを購入して、 368 TiB を超える容量を割り当てることができるようになりました。シングルノードシステムまたは HA ペアに対して購入できるライセンスの数に制限はありません。ディスク制限によって、ディスクだけを使用することで容量制限に達することがないことに注意してください。を使用すると、ディスク制限を超えることができます<block ref="91a4fc4ecb983c2fca7588f26341e223" category="inline-link-rx"></block>。<block ref="cd9ff634efd9a4fe20f170cd618702b5" category="inline-link-rx"></block>。</block>
@@ -755,4 +750,5 @@
   <block id="7ddea5d9f1e01b01ba11b40da7046d95" category="list-text">Cloud Volumes ONTAP では、 HA ペアを使用する場合、これらの VM タイプで高速な書き込み速度がサポートされます。高速の書き込み速度は、導入時または導入後にいつでもCloud Managerから有効にできます。<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>。</block>
   <block id="75b66e0b3cef735ea985bd79ab9601e2" category="cell">m5dn.mcip</block>
   <block id="bc503c45d950d94391e7685c6585b286" category="cell">m5dn. 12xlarge</block>
+  <block id="c50e8615eb65e21639a9b12f16b31280" category="list-text">このリリースの新しいCloud Volumes ONTAP システムでは、c4、m4、およびR4インスタンスタイプはサポートされません。ただし、これらのインスタンスタイプのいずれかで実行している場合は、このリリースにシステムをアップグレードできるため、これらのインスタンスタイプのディスク制限は引き続き表示されます。</block>
 </blocks>
