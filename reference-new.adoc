@@ -16,7 +16,7 @@ summary: Cloud Volumes ONTAP 9.11.0には、新しい拡張機能が追加され
 [role="lead"]
 Cloud Volumes ONTAP 9.11.0には、新しい拡張機能が追加されています。
 
-その他の機能と機能拡張は、 Cloud Manager の最新バージョンで導入されました。を参照してください https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Cloud Manager リリースノート"^] を参照してください。
+その他の機能と拡張機能も、最新バージョンのBlueXPで導入されました。を参照してください https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["BlueXPリリースノート"^] を参照してください。
 
 
 
@@ -32,9 +32,9 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-change
 
 == Elastic Volumesのサポート（2022年6月7日）
 
-Cloud Volumes ONTAP アグリゲートでAmazon EBS Elastic Volumes機能がサポートされるため、パフォーマンスが向上して容量が追加されると同時に、必要に応じて基盤となるディスク容量がCloud Managerで自動的に拡張されます。
+Cloud Volumes ONTAP アグリゲートでAmazon EBS Elastic Volumes機能がサポートされるため、パフォーマンスが向上し、容量が追加されます。また、必要に応じて基盤となるディスク容量が自動的に拡張されます。
 
-Elastic Volumesは、Cloud Manager Connector 3.9.19リリース以降でサポートされます。このリリースは、特定のCloud Volumes ONTAP バージョンと特定のEBSディスクタイプでサポートされます。
+Elastic Volumesは、BlueXP Connector 3.9.19リリース以降でサポートされており、特定のCloud Volumes ONTAP バージョンと特定のEBSディスクタイプでサポートされています。
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["Elastic Volumesのサポートに関する詳細情報"^]
 
@@ -54,7 +54,7 @@ AWSのCloud Volumes ONTAP からS3オブジェクトストレージを提供で�
 
 * Cloud Volumes ONTAP S3 と ONTAP の主なユースケースは、汎用のオブジェクトストアです。
 * 現時点では、Google CloudのCloud Volumes ONTAP ではS3プロトコルはサポートされていません。
-* Cloud Manager には、 ONTAP S3 機能に対する管理機能はありません。
+* BlueXPには、ONTAP S3機能の管理機能はありません。
 
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP で S3 オブジェクトストレージサービスを設定および管理する方法について説明します"^]。
@@ -69,21 +69,21 @@ https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP 
 
 === アップグレード方法
 
-Cloud Volumes ONTAP のアップグレードが Cloud Manager から完了している必要があります。System Manager または CLI を使用して Cloud Volumes ONTAP をアップグレードしないでください。これを行うと、システムの安定性に影響を与える可能性
+Cloud Volumes ONTAP のアップグレードは、BlueXPから完了している必要があります。System Manager または CLI を使用して Cloud Volumes ONTAP をアップグレードしないでください。これを行うと、システムの安定性に影響を与える可能性
 
-http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Cloud Manager から通知された場合のアップグレード方法について説明します"^]。
+http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["BlueXPから通知があった場合のアップグレード方法について説明します"^]。
 
 
 
 === サポートされているアップグレードパス
 
-9.10.1リリースからCloud Volumes ONTAP 9.11.0にアップグレードできます。対象となるCloud Volumes ONTAP システムをこのリリースにアップグレードするよう求めるプロンプトがCloud Managerに表示されます。
+9.10.1リリースからCloud Volumes ONTAP 9.11.0にアップグレードできます。BlueXPでは、対象となるCloud Volumes ONTAP システムをこのリリースにアップグレードするように求められます。
 
 
 
 === 必要なコネクタのバージョン
 
-既存のシステムを9.11.0にアップグレードするには、Cloud Manager Connectorでバージョン3.9.18以降が実行されている必要があります。
+既存のシステムを9.11.0にアップグレードするには、BlueXP Connectorでバージョン3.9.18以降が実行されている必要があります。
 
 
 TIP: コネクタの自動アップグレードはデフォルトで有効になっているため、最新バージョンを実行する必要があります。
