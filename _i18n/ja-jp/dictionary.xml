@@ -591,8 +591,6 @@
   <block id="deb56fb5a824215375b16e72749e2aa3" category="inline-link">これらのライセンスオプションの詳細については、こちらをご覧ください</block>
   <block id="346f7f627d1a93bfbf315865554048c6" category="list-text">ランサムウェア対策</block>
   <block id="33f66f5b18b24875dca7a81c8f84c5b9" category="cell">896TiB</block>
-  <block id="e7a585efb4ff7fae4274ad6c7457c7c6" category="section-title">C4、M4、およびR4のインスタンスはサポートされなくなりました（2022年10月28日）</block>
-  <block id="841d1ec868d8656a6dc9f74fd65112d6" category="paragraph">AWSでは、C4、M4、およびR4 EC2インスタンスタイプはCloud Volumes ONTAP でサポートされなくなりました。C4、M4、またはR4インスタンスタイプで実行されている既存のシステムがある場合は、C5、m5、またはr5インスタンスファミリーでインスタンスタイプに変更する必要があります。</block>
   <block id="6614eabe1ab14f33107830de1efb584a" category="inline-link-macro">Cloud Volumes ONTAP のEC2インスタンスタイプを変更する方法について説明します</block>
   <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link-macro">ネットアップサポート</block>
   <block id="0b55c70d5652d8fe1f5ddc75633eaa95" category="paragraph">を参照してください <block ref="0bcfd67fb2b966e3378fbf640ee81a22" category="inline-link-macro-rx"></block> これらのインスタンスタイプの可用性とサポート終了の詳細については、を参照してください。</block>
@@ -638,7 +636,6 @@
   <block id="100e0e5b58741c034dadba013998e8b8" category="list-text">Amazon EBS Elastic Volumes機能をサポートする構成の場合、アグリゲートには最大8本のディスクを格納でき、最大128TiBの容量を提供できます。Amazon EBS Elastic Cloud Volumes ONTAP 機能は、GP3またはio1ディスクを使用している場合、_new_GP9.11.0以降のシステムではデフォルトで有効になっています。<block ref="d6d48ea3644fd45f9f7ff8f4c8d4ae57" category="inline-link-rx"></block></block>
   <block id="c0ad13124302d4d047c0f916a6418182" category="paragraph"><block ref="cc3941262f254d1055804ecddca39dec" category="inline-link-rx"></block>。</block>
   <block id="4bdb15bfe1bad472d818dc31e8f53185" category="paragraph">その他の機能と拡張機能も、最新バージョンのBlueXPで導入されました。を参照してください<block ref="c7887e85c6060ae2594d873a0f2ae025" category="inline-link-rx"></block> を参照してください。</block>
-  <block id="34b2f4eab827285a262b1781e672e882" category="paragraph"><block ref="3f0e03f473a215943c109dc7746cdb60" category="inline-link-macro-rx"></block>。</block>
   <block id="6b654a614823c350198276575945b17b" category="paragraph"><block ref="6b654a614823c350198276575945b17b" category="inline-link-rx"></block></block>
   <block id="4b323e04ca5d7cc4cd4fa2663891f134" category="paragraph"><block ref="1098c1d48c661da787dab89e43caa652" category="inline-link-rx"></block>。</block>
   <block id="64440bb71539a777dc59cfbda8a3e5ee" category="list-text">この VM タイプにはローカルの NVMe ストレージが含まれており、 Cloud Volumes ONTAP では _Flash Cache _ として使用されます。Flash Cache は、最近読み取られたユーザデータとネットアップのメタデータをリアルタイムでインテリジェントにキャッシングすることで、データへのアクセスを高速化します。データベース、 E メール、ファイルサービスなど、ランダムリードが大量に発生するワークロードに効果的です。Flash Cache のパフォーマンス向上を利用するには、すべてのボリュームで圧縮を無効にする必要があります。<block ref="b6abeaa384c5670d0721bcc6323011fc" category="inline-link-rx"></block>。</block>
@@ -660,4 +657,9 @@
 1 つのデータ提供用 SVM は、 Cloud Volumes ONTAP システム全体（ HA ペアまたはシングルノード）にまたがります。</block>
   <block id="2dbd9a217bce4c7ba4ef467f57d6875c" category="list-text">Cloud Volumes ONTAP BYOLシングルノードまたはHAペアシステム用に複数のノードベースライセンスを購入して、368TiBを超える容量を割り当てることができます（テストおよびサポートされるシステム容量の上限である2PiBまで）。ディスク制限によって、ディスクだけを使用することで容量制限に達することがないことに注意してください。を使用すると、ディスク制限を超えることができます<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>。<block ref="ca37ce4dde5616ef242d545490c7e6ee" category="inline-link-rx"></block>。Cloud Volumes ONTAPでは、テストおよびサポートされる最大システム容量2PiBまでサポートされますが、2PiBの制限を超えると、サポートされないシステム構成になります。</block>
   <block id="de9d6749570efc87e63811b5947fc250" category="list-text">AWS Secret CloudリージョンとTop Secret Cloudリージョンでは、Cloud Volumes ONTAP 9.12.1以降で複数のノードベースライセンスの購入がサポートされます。</block>
+  <block id="b74a118169165fd9778df58b68c1bf8b" category="section-title">C4、M4、R4 EC2インスタンスタイプを使用したAWSでのアップグレード</block>
+  <block id="fbf9b099d9ec8deac1671938fd60e8f8" category="paragraph">AWSでは、新しいCloud Volumes ONTAP環境でc4、m4、およびr4 EC2インスタンスタイプはサポートされなくなりました。C4、M4、またはR4インスタンスタイプで実行されている既存のシステムがある場合は、C5、m5、またはr5インスタンスファミリーでインスタンスタイプに変更する必要があります。インスタンスタイプを変更できない場合は、アップグレード前に拡張ネットワークを有効にする必要があります。</block>
+  <block id="e1ec06a3bd4a559443a88f1cb6736c26" category="inline-link-macro">C4、M4、R4 EC2インスタンスタイプを使用してAWSでアップグレードする方法を確認する</block>
+  <block id="f295c0f45a8e22a4e4db9141680cce76" category="paragraph"><block ref="0fa12a627192b6cd097b12cd8088afe0" category="inline-link-macro-rx"></block>。
+<block ref="3f0e03f473a215943c109dc7746cdb60" category="inline-link-macro-rx"></block>。</block>
 </blocks>
