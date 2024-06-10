@@ -580,8 +580,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">ネットアップコミュニティ</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central のブログです</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">クラウドに関する Web セミナー</block>
-  <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
-  <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">ONTAP クラウド</block>
   <block id="69c66585077895e1652860605b3e1687" category="section-title">Elastic Volumesのサポート（2022年6月7日）</block>
   <block id="4e1b6146fa2cb1efc8bff10f1cf7e93c" category="list-text">E80ids_v4^1,2^</block>
   <block id="75b66e0b3cef735ea985bd79ab9601e2" category="cell">m5dn.mcip</block>
@@ -620,7 +618,6 @@
   <block id="5eaf873931f55b8762ee767f05a1cd4c" category="paragraph">既存のシステムを9.11.0にアップグレードするには、BlueXP Connectorでバージョン3.9.18以降が実行されている必要があります。</block>
   <block id="fde45fa5cd70a93e88151b83aa348f12" category="inline-link">BlueXP APIエンドポイント</block>
   <block id="40aa449308d0af16355f19e61ffe344b" category="paragraph">いいえ、できません。HA ペアのデータは、 Google Cloud で障害が発生した場合にデータを利用できるように、ノード間で同期的にミラーされます。たとえば、ノードAで8 TBのディスクを購入した場合、BlueXPはノードBにも8 TBのディスクを割り当てます。このディスクはミラーリングされたデータに使用されます。16TB の容量がプロビジョニングされましたが、ライセンスの上限には 8TB しかカウントされません。</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">BlueXPのすべてのマニュアル</block>
   <block id="12964005c5d7e3005a6efbac919f2869" category="paragraph">を活用する場合は<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> Cloud Volumes ONTAP を導入する VPC 内で、必要なにトラフィックを転送する DNS レコードを実装する必要があります<block ref="f6959d0a2d8478df824c26fa5d8f2e95" category="inline-link-rx"></block>。</block>
   <block id="79d3c4941fdb49ae08cc30405f716cce" category="list-text">一部の構成では、ディスク制限により、ディスクのみを使用して容量制限に達することができません。その場合、で容量の制限に達することができます<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>。ディスクの制限については、を参照してください <block ref="71ccaacc6f6c8feca068c7ff1a7b2eb5" category="inline-link-macro-rx"></block>。</block>
   <block id="ca40429b1b07555a35de829b976a6961" category="paragraph">AWS では、アグリゲートに同じサイズのディスクを最大 6 本含めることができます。ただし、Amazon EBS Elastic Volumes機能をサポートする構成では、アグリゲートに最大8本のディスクを含めることができます。<block ref="d6d48ea3644fd45f9f7ff8f4c8d4ae57" category="inline-link-rx"></block></block>
@@ -662,4 +659,5 @@
   <block id="e1ec06a3bd4a559443a88f1cb6736c26" category="inline-link-macro">C4、M4、R4 EC2インスタンスタイプを使用してAWSでアップグレードする方法を確認する</block>
   <block id="f295c0f45a8e22a4e4db9141680cce76" category="paragraph"><block ref="0fa12a627192b6cd097b12cd8088afe0" category="inline-link-macro-rx"></block>。
 <block ref="3f0e03f473a215943c109dc7746cdb60" category="inline-link-macro-rx"></block>。</block>
+  <block id="635b8666b75aa41cbb414efb1a4e8850" category="sidebar">このリリースノートでは、Cloud Volumes ONTAP 9.11の新機能、制限事項、および既知の問題について説明します。</block>
 </blocks>
